@@ -1,130 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Air Weather - Privacy Policy</title>
+  <title>AirWeatherHelper</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      margin: 2rem auto;
-      max-width: 800px;
-      line-height: 1.6;
-      padding: 0 1rem;
-      background: #fdfdfd;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .icon {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25); /* icon 陰影 */
+    }
+    h1 {
+      color: #007BFF;
+    }
+    p {
+      font-size: 16px;
       color: #333;
     }
-    h1, h2 {
-      color: #2c3e50;
+    .actions {
+      margin: 25px 0;
     }
-    .lang-btns {
-      margin-bottom: 1.5rem;
-    }
-    button {
-      margin-right: 8px;
-      padding: 6px 12px;
-      border: 1px solid #ccc;
-      background: #f8f8f8;
-      cursor: pointer;
+    .btn {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 20px;
+      background: #007BFF;  /* 統一藍色 */
+      color: white;
+      text-decoration: none;
       border-radius: 6px;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: background 0.3s;
     }
-    button:hover {
-      background: #eaeaea;
+    .btn:hover {
+      background: #0056b3;
     }
-    .section {
-      display: none;
+    .contact {
+      margin-top: 20px;
+      font-size: 15px;
+      color: #333;
     }
-    .section.active {
-      display: block;
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>Air Weather - Privacy Policy</h1>
+  <div class="container">
+    <!-- App Icon -->
+    <img src="icon.png" alt="App Icon" class="icon">
 
-  <div class="lang-btns">
-    <button onclick="showLang('zh')">繁體中文</button>
-    <button onclick="showLang('ja')">日本語</button>
-    <button onclick="showLang('en')">English</button>
+    <!-- 標題 -->
+    <h1>AirWeatherHelper</h1>
+    <p>即時掌握天氣與空氣品質，讓生活更安心。</p>
+
+    <!-- 按鈕 -->
+    <div class="actions">
+      <a class="btn" href="https://ezio1983.github.io/airweather-privacy/" target="_blank" rel="noopener">隱私權政策</a>
+      <a class="btn" href="https://apps.apple.com/tw/app/airweatherhelper/id6751576773" target="_blank" rel="noopener">在 App Store 下載</a>
+    </div>
+
+    <!-- 聯絡方式 -->
+    <div class="contact">
+      如有任何問題，請聯繫我們：<br>
+      📧 <a href="mailto:airweatherapp@gmail.com">airweatherapp@gmail.com</a>
+    </div>
+
+    <!-- 版權 -->
+    <footer>
+      © 2025 AirWeatherHelper. All Rights Reserved.
+    </footer>
   </div>
-
-  <!-- 繁體中文 -->
-  <div id="zh" class="section active">
-    <h2>隱私權政策</h2>
-    <p>感謝您使用 <b>Air Weather</b>。我們非常重視您的隱私與資料安全，並承諾不會蒐集、不會儲存您的個人資料。</p>
-
-    <h3>我們如何處理資料</h3>
-    <ul>
-      <li><b>定位資訊</b>：僅用於即時顯示目前位置的天氣與空氣品質，不會上傳或保存到伺服器。</li>
-      <li><b>城市設定</b>：您選擇的城市僅儲存在您的裝置中。</li>
-      <li><b>網路存取</b>：僅用於連線至天氣與空氣品質資料來源，不會傳送您的個人資訊。</li>
-    </ul>
-
-    <h3>我們不會做的事</h3>
-    <ul>
-      <li>不會蒐集任何可識別個人身分的資訊。</li>
-      <li>不會將資料分享或販售給第三方。</li>
-      <li>不會進行行為追蹤。</li>
-    </ul>
-
-    <h3>聯絡方式</h3>
-    <p>如有任何問題，請聯繫我們：<br>
-    📧 airweatherapp@gmail.com</p>
-  </div>
-
-  <!-- 日本語 -->
-  <div id="ja" class="section">
-    <h2>プライバシーポリシー</h2>
-    <p><b>Air Weather</b> をご利用いただきありがとうございます。当アプリはユーザーのプライバシーとデータ保護を最優先に考え、個人情報を収集・保存することはありません。</p>
-
-    <h3>データの取り扱いについて</h3>
-    <ul>
-      <li><b>位置情報</b>：現在地の天気・空気質を表示するためにのみ使用し、サーバーに送信・保存しません。</li>
-      <li><b>都市設定</b>：選択した都市はデバイス内にのみ保存されます。</li>
-      <li><b>ネットワークアクセス</b>：天気と空気質の情報を取得するためだけに使用され、個人情報は送信されません。</li>
-    </ul>
-
-    <h3>当アプリが行わないこと</h3>
-    <ul>
-      <li>個人を特定できる情報を収集しません。</li>
-      <li>データを第三者に共有・販売しません。</li>
-      <li>行動トラッキングを行いません。</li>
-    </ul>
-
-    <h3>お問い合わせ</h3>
-    <p>ご質問がある場合は、以下にご連絡ください：<br>
-    📧 airweatherapp@gmail.com</p>
-  </div>
-
-  <!-- English -->
-  <div id="en" class="section">
-    <h2>Privacy Policy</h2>
-    <p>Thank you for using <b>Air Weather</b>. We highly value your privacy and data security, and we do not collect or store any personal information.</p>
-
-    <h3>How We Handle Data</h3>
-    <ul>
-      <li><b>Location Data</b>: Used only to display real-time weather and air quality for your current location. It is never uploaded or stored on our servers.</li>
-      <li><b>City Settings</b>: Your selected cities are stored locally on your device only.</li>
-      <li><b>Network Access</b>: Used solely to fetch weather and air quality data from third-party APIs. No personal data is transmitted.</li>
-    </ul>
-
-    <h3>What We Do Not Do</h3>
-    <ul>
-      <li>We do not collect personally identifiable information.</li>
-      <li>We do not share or sell your data to third parties.</li>
-      <li>We do not track user behavior.</li>
-    </ul>
-
-    <h3>Contact</h3>
-    <p>For any questions, please contact us:<br>
-    📧 airweatherapp@gmail.com</p>
-  </div>
-
-  <script>
-    function showLang(lang) {
-      document.querySelectorAll('.section').forEach(el => el.classList.remove('active'));
-      document.getElementById(lang).classList.add('active');
-    }
-  </script>
 </body>
 </html>
